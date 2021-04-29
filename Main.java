@@ -1,27 +1,20 @@
 package sample;
 
-import sample.model.Caminhao;
-import sample.model.Carro;
+import sample.model.Cliente;
+import sample.model.Pessoa;
 
-public class Main {
+public class Main{
 
     public static void main(String[] args) {
 
-        Carro carro = new Carro("Fiesta");
-        carro.setMarca("Ford", "A empresa.....");
-        carro.setDesc("Carro do prof");
-        carro.setnPortas(4);
-        System.out.println(carro + "\n\n");
-
-        Carro carro2 = new Carro("Palio");
-        carro2.setMarca("Fiat","A empresa.....");
-        carro2.setnPortas(4);
-        System.out.println(carro2 + "\n\n");
-
-        Caminhao caminhao = new Caminhao("S460");
-        caminhao.setMarca("Scania", "A empresa.....");
-        caminhao.setnEixos(6);
-        System.out.println(caminhao + "\n\n");
-
+        Cliente cliente1 = new Cliente("Emílio Santiago");
+        cliente1.setCpf("200.900.111-90");
+        cliente1.setEndereco("Sete de setembro", 12);
+        Cliente cliente2 = new Cliente("Raul Seixas", "888.999.111.90");
+        Cliente cliente3 = new Cliente("Dom Pedro I", "1-01", "pedrao@brasil.br");
+        System.out.println(cliente1);
+        System.out.println(cliente2);
+        System.out.println(cliente3);
     }
 }
+
