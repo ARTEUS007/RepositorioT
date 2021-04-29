@@ -1,0 +1,13 @@
+Oracle é um sgbd criado em 1980 são basicamente programas que ajudam o administrador do banco de dados a organizar, proteger, editar e acessar as informações da empresa armazenadas no banco de dados.
+
+Atualmente o mais utilizado do mundo, por 5 motivos: segurança, estabilidade, custo benefício,0. performance e suporte eficaz.
+Para garantir a segurança junto ao Banco de Dados, a Oracle disponibiliza uma ferramenta chamada Recovery Manager (Rman). O Rman executa o backup integro do Banco de dados e é utilizado para fazer a recuperação.
+ 
+ Velocidade dos discos, quantidade de memória e a capacidade de processamento. tudo isso faz com que se torne estavel e se mantenha constantemente.
+
+O Banco de Dados possui um baixo preço de entrada e licenciamento flexível, onde o negócio terá ainda mais retorno sobre os investimentos feitos.
+
+Por ser um banco de dados mais robusto, ele permite ser mais ágil em suas funcionalidades, gerando resultado com qualidade e pontualidade.
+
+A Oracle garante suporte a todos os seus produtos, desde a implementação, até seu upgrade de versão, contando com uma empresa especializada em Oracle. É importante que essas empresas possuam serviços de suporte 24×7 e monitoramento 24 horas.
+A DKP  possui profissionais com certificados de excelência em Banco de Dados e outras aplicações Oracle. Além de possuir tudo que é necessário para proporcionar performance e estabilidade para o ambiente.
