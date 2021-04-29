@@ -1,23 +1,27 @@
 package sample;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import sample.model.Caminhao;
+import sample.model.Carro;
 
-public class Main extends Application {
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-    }
-
+public class Main {
 
     public static void main(String[] args) {
-        launch(args);
+
+        Carro carro = new Carro("Fiesta");
+        carro.setMarca("Ford", "A empresa.....");
+        carro.setDesc("Carro do prof");
+        carro.setnPortas(4);
+        System.out.println(carro + "\n\n");
+
+        Carro carro2 = new Carro("Palio");
+        carro2.setMarca("Fiat","A empresa.....");
+        carro2.setnPortas(4);
+        System.out.println(carro2 + "\n\n");
+
+        Caminhao caminhao = new Caminhao("S460");
+        caminhao.setMarca("Scania", "A empresa.....");
+        caminhao.setnEixos(6);
+        System.out.println(caminhao + "\n\n");
+
     }
 }
