@@ -1,0 +1,74 @@
+Turma : 3 C
+Aluno : Igor Borba Fraga
+
+História
+
+Java é uma linguagem de programação orientada a objetos que foi criada na Sun Microsystems em 1991. Tudo começou com o "Projeto Verde", no qual os mentores foram Patrick Norton, Mike Sheridan e James Gosling. Este projeto não visa criar uma linguagem de programação, mas prever a "próxima onda" que ocorrerá nas áreas de computação e programação. O idealizador do projeto acredita que em breve serão conectados eletrodomésticos e computadores.
+
+Paradigma da linguagem:
+Orientação a objetos (baseada em classes), estruturada, imperativa, genérica, funcional, refletiva, concorrente
+
+JRE e JDK
+
+RE (Java Runtime Environment) é uma implementação da Java Virtual Machine *, que realmente executa programas Java. O Java Runtime Environment é um plug-in necessário para a execução de programas Java. O JRE é menor que o JDK, portanto, requer menos espaço em disco. Você pode baixar / obter suporte para JRE em java.com, incluindo JVM, biblioteca central e outros add-ons para executar aplicativos e miniaplicativos criados em Java. JDK (Java Development Kit) Este é um pacote de software que pode ser usado para desenvolver aplicativos baseados em Java. O Java Development Kit é necessário para desenvolver aplicativos Java. O JDK precisa de mais espaço em disco porque contém JRE e algumas ferramentas de desenvolvimento. Você pode baixar / obter suporte para JDK / incluindo JRE, um conjunto de classes de API em oracle.com/technetwork/java/javase/downloads/, compilador Java, Webstart e outros arquivos necessários para criar miniaplicativos e aplicativos Java.
+
+Processo de execução do Java
+
+Passo 1: Criar / editar o programa Java 
+Passo 2: Compilar o programa Java com bytecode 
+Passo 3: Carregar o programa na memória 
+Passo 4: Verificação de bytecode 
+Passo 5: Execute
+
+IDEs de desenvolvimento
+
+Eclipse, NetBeans, IntelliJ e Blue J
+
+Tipos de dados primitivos:
+
+Os tipos de dados/variáveis primitivas no Java são 8: byte, short, char, int, long, float, double e boolean.
+
+
+Aplicações
+
+De acordo com a página inicial do Java, há mais de 1 bilhão de computadores e 3 bilhões de telefones celulares executando Java em todo o mundo. Java é usado para construir aplicativos e plataformas para vários dispositivos, incluindo computadores, laptops, consoles, reprodutores Blu-ray, sistemas de navegação automotiva, equipamentos de monitoramento médico, parquímetros, terminais de loteria e smartphones. No mundo real, Java é usado em muitos lugares, de sites comerciais de e-commerce para aplicativos Android, de aplicativos científicos a aplicativos financeiros (como sistemas de comércio eletrônico), de jogos (como Minecraft) a aplicativos de desktop (como Eclipse , NetBeans e IntelliJ), bibliotecas de código-fonte aberto para aplicativos J2ME, etc.
+
+Podendo ser usada para :
+
+Aplicações de servidor na indústria de serviços financeiros
+Ferramentas de Software
+Aplicações Android
+Aplicação de Negociação
+Aplicativos J2ME
+Aplicativos de Web Java
+Espaço Embutido
+Tecnologias de Big Data
+Aplicações Científicas
+Espaço de Negociação de Alta Frequência
+
+Exemplos de sistemas que utilizam Java:
+
+Hadoop. 
+JavaFX Deep Space Trajectory Explorer. 
+Maestro, controlador de rovers em Marte. 
+JMARS e JMoon. 
+Small Body Mapping Tool (SBMT). 
+VisibleTesla. 
+Wikipedia Search. 
+NASA WorldWind. 
+Parallel Graph AnalytiX (PGX).
+H2O.ai. 
+Minecraft. 
+Robô Jitter e leJOS. 
+Java applets. 
+NetBeans e Eclipse IDE. 
+IntelliJ IDEA. 
+Byte Buddy. 
+Jenkins. 
+GraalVM. 
+WebLogic Tengah. 
+Eclipse Collections. 
+NSA Ghidra. 
+Integrated Genome Browser. 
+BioJava. 
+Micronaut. 
