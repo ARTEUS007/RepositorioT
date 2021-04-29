@@ -1,0 +1,46 @@
+#Exercicio 1
+select * from aluno where sexo = "M";
+#Exercicio 2
+select * from aluno where idade = "19";
+#Exercicio 3
+select * from aluno where nome like 'D%';
+#Exercicio 4 
+select * from aluno where idade >= "20 <= 22";
+#Exercicio 5
+select * from aluno where cidade is null;
+#Exercicio 6
+select * from aluno where cidade = 'blumenau';
+#Exercicio 7
+select * from aluno where idade <> "18";
+#Exercicio 8
+select * from aluno where nome like '%Ri%';
+#Exercicio 9
+select * from aluno where (cidade = 'sao jose' and sexo = 'M' and idade <= "20");
+#Exercicio 10
+select * from aluno where (idade >= "20" and sexo = 'f') or (idade >= "17" and sexo = 'm');
+#Exercicio 11
+
+select * from aluno where (nome like '%R%' and '%A%');
+
+#Exercicio 12
+Select nome, idade from aluno  where sexo = 'f';
+#Exercicio 13
+select idaluno, nome from aluno where cidade = "blumenau";
+#Exercicio 14
+select nome, cidade from aluno where idade >= '18';
+#Exercicio 15
+select nome, cidade from aluno where idade between 15 and 18 and not cidade="palhoça";
+#Exercicio 16
+select cidade from aluno where null;
+#Exercicio 17 
+select nome from aluno where idade = '18' and cidade = "palhoca" or idade = '17' and cidade = "sao jose";
+#Exercicio 18
+SELECT NOME FROM ALUNO WHERE SEXO = 'M' AND CIDADE = "TUBARAO" AND IDADE >=18 AND IDADE <= 25;
+#Exercicio 19
+SELECT NOME, IDADE FROM ALUNO ORDER BY IDADE;
+#Exercicio 20
+SELECT IDALUNO, NOME FROM ALUNO ORDER BY NOME DESC;
+#Exercicio 21
+SELECT * FROM ALUNO ORDER BY IDADE DESC, NOME ASC; 
+#Exercicio 22
+SELECT * FROM ALUNO ORDER BY SEXO, NOME;
