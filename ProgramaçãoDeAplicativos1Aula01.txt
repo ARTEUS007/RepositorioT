@@ -1,0 +1,51 @@
+package domain;
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        
+        System.out.println("Digite o nome do aluno :");
+        //Processando provas do aluno...
+        String aa = "Prova 1 :  ";
+        double a = 6;
+        System.out.print(aa);
+        System.out.println(a);
+        
+        String bb = "Prova 2 :  ";
+        double b = 4;
+        System.out.print(bb);
+        System.out.println(b);
+
+        String cc = "Média das provas:  ";
+        double c = (a+b);
+        System.out.print(cc);
+        System.out.println(c/2);
+        
+        if (c <= 6) {
+        String d = " Você foi aprovado,parábens ";
+        System.out.println(d);
+        }else{
+        String e = "Você terá de fazer o exame final.";
+        System.out.println(e);
+        }
+        
+         String gg = "Exame :  ";
+        double g = 10;
+        System.out.print(gg);
+        System.out.println(g);
+        
+        String f = "Nova média: ";
+        System.out.print(f);
+        double media  = (a+b+g);
+        System.out.println(media/3);
+        
+        if (c <= 6) {
+        String d = " Você foi aprovado,parábens ";
+        System.out.println(d);
+        }else{
+        String e = "Você foi reprovado.";
+        System.out.println(e);
+        }
+        
+        }
+    }

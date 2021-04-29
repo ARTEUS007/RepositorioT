@@ -1,0 +1,85 @@
+import java.util.Scanner;
+class Main {
+  
+  public static void main(String[] args) {
+      Scanner roupa = new Scanner(System.in);
+      System.out.println("Digite o valor da camisa que você deseja comprar e o código de desconto/acréscimo\nA = Desconto 10%\nB = Desconto 15%\n C = Desconto 20%\n D = Acréscimo 5%");
+      System.out.println("Digite primeiro o código e depois o valor da compra:");
+    
+    String cod = roupa.nextLine();
+     int valor = roupa.nextInt(); 
+   
+    if(cod.equals("a")|| cod.equals("A")){
+      
+      double total = valor * 0.9;
+      if(total<valor){
+      System.out.println("ouve desconto");
+      }else if(total>valor){
+        System.out.println("Ouve acréscimo");
+      }
+
+      double desconto = ((valor-total)*100)/valor;
+      if(desconto < 0){
+        desconto = desconto*(-1);
+        System.out.println("Ouve um acréscimo de "+desconto+"%");
+      }else{
+        System.out.println("Ouve um desconto de "+desconto+"%");
+      }
+      System.out.println("Valor final: R$"+total);
+    }else if(cod.equals("b")||cod.equals("B")){
+      
+      double total = valor * 0.85;
+      if(total<valor){
+      System.out.println("ouve desconto");
+      }else if(total>valor){
+        System.out.println("Ouve acréscimo");
+      }
+
+      double desconto = ((valor-total)*100)/valor;
+      if(desconto < 0){
+        desconto = desconto*(-1);
+        System.out.println("Ouve um acréscimo de "+desconto+"%");
+      }else{
+        System.out.println("Ouve um desconto de "+desconto+"%");
+      }
+      System.out.println("Valor final: R$"+total);
+
+    }else if(cod.equals("c")||cod.equals("C")){
+      
+      double total = valor * 0.80;
+      if(total<valor){
+      System.out.println("ouve desconto");
+      }else if(total>valor){
+        System.out.println("Ouve acréscimo");
+      }
+
+      double desconto = ((valor-total)*100)/valor;
+      if(desconto < 0){
+        desconto = desconto*(-1);
+        System.out.println("Ouve um acréscimo de "+desconto+"%");
+      }else{
+        System.out.println("Ouve um desconto de "+desconto+"%");
+      }
+      System.out.println("Valor final: R$"+total);
+
+    }else if(cod.equals("d")||cod.equals("D")){
+      
+      double total = valor * 1.05;
+      if(total<valor){
+      System.out.println("ouve desconto");
+      }else if(total>valor){
+        System.out.println("Ouve acréscimo");
+      }
+
+      double desconto = ((valor-total)*100)/valor;
+      if(desconto < 0){
+        desconto = desconto*(-1);
+        System.out.println("Ouve um acréscimo de "+desconto+"%");
+      }else{
+        System.out.println("Ouve um desconto de "+desconto+"%");
+      }
+      System.out.println("Valor final: R$"+total);
+
+      }
+    }
+}
