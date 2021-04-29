@@ -1,20 +1,28 @@
+
 package sample;
 
-import sample.model.Cliente;
-import sample.model.Pessoa;
+public class Main {
 
-public class Main{
+    public static void main (String[] args ) {
 
-    public static void main(String[] args) {
+        Pessoa p1 = new Pessoa();
+        p1.setNome("Igor Borba");
+        p1.setIdade(17);
 
-        Cliente cliente1 = new Cliente("Emílio Santiago");
-        cliente1.setCpf("200.900.111-90");
-        cliente1.setEndereco("Sete de setembro", 12);
-        Cliente cliente2 = new Cliente("Raul Seixas", "888.999.111.90");
-        Cliente cliente3 = new Cliente("Dom Pedro I", "1-01", "pedrao@brasil.br");
-        System.out.println(cliente1);
-        System.out.println(cliente2);
-        System.out.println(cliente3);
+        System.out.println(p1.toString());
+
+        Pessoa p2 = new Pessoa();
+        p2.setNome("Rodrigo");
+        p2.setIdade(20);
+
+        System.out.println(p2.toString());
+
+        if(p1.getIdade() > p2.getIdade()){
+            System.out.println(p1.getNome() + " é mais velho!!!");
+        }else{
+            System.out.println(p2.getNome() + " é mais velho!!!");
+        }
+
     }
 }
 

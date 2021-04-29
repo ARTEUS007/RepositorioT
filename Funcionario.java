@@ -1,8 +1,8 @@
 package sample;
 
-public class Pessoa {
+public class Funcionario {
     private String nome;
-    private int idade;
+    private double salario;
 
     public String getNome() {
         return nome;
@@ -12,19 +12,19 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public int getIdade() {
-        return idade;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
     @Override
     public String toString() {
-        return "Pessoa " +
+        return "Funcionario " +
                 "nome " + nome + '\'' +
-                ", idade " + idade +
+                ", salario " + salario +
                 ' ';
     }
 }
