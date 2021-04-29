@@ -1,81 +1,48 @@
 package sample.model;
 
 public class Conta {
-    //atributos
+    private int numero;
+    private String nome;
     private double saldo;
-    private double limite;
-    private int numeroDaConta;
-    private int numeroDaAgencia;
 
-    //constante
-    private static final int LIMITE = 200;
-
-    //getters e setters
-    public Conta(int numeroDaConta, int numeroDaAgencia){
-
-        this.numeroDaAgencia = numeroDaAgencia;
-        this.numeroDaConta = numeroDaConta;
-        this.saldo = 0;
-        this.limite = LIMITE;
+    public Conta(int numero, String nome){
+        this.numero = numero;
+        this.nome = nome;
+        saldo = 0.0;
+    }
+    public Conta(int numero, String nome, double saldo){
+        this.numero = numero;
+        this.nome = nome;
+        this.saldo = saldo;
     }
 
-    public int getNumeroDaAgencia(){
-        return this.numeroDaAgencia;
+    public int getNumero() {
+        return numero;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public double getSaldo() {
+        return saldo;
     }
 
-    public void setNumeroDaAgencia(int numeroDaAgencia){
-        this.numeroDaAgencia = numeroDaAgencia;
+    //déposito
+    public void deposito(double valor){
+        this.saldo += valor;
     }
 
-    public int getNumeroDaConta(){
-        return this.numeroDaConta;
+    //saque
+    public void saque(double valor){
+        this.saldo = this.saldo -5.0 - valor;
+        //this.saldo -= valor (-5);
     }
 
-    public void setNumeroDaConta(int numeroDaConta){
-        this.numeroDaConta = numeroDaConta;
-    }
-
-    public double getSaldo(){
-        return this.saldo;
-    }
-
-    public void depositar(double valor){
-        if (this.limite < LIMITE){
-            if (valor <= this.limite ){
-                this.limite += valor;
-            } else {
-                this.limite = LIMITE;
-                this.saldo = valor - LIMITE;
-            }
-        } else {
-            this.saldo += valor;
-        }
-    }
-
-    public boolean sacar(double valor){
-        if ((this.saldo + this.limite) >= valor){
-            if(this.saldo == 0){
-                this.limite -= valor;
-            } else {
-                this.saldo -= valor;
-            }
-            return true;
-        } else {
-            return false;
-        }
-
-    }
-
-    public double getLimite(){
-        return this.limite;
-    }
-
-    @Override
-    public String toString() {
-        return "Conta: " +
-                "saldo: " + saldo +
-                ", limite: " + limite +
-                ", Número da Conta: " + numeroDaConta +
-                ", Número da Agencia: " + numeroDaAgencia;
+    public void imprimir(){
+        System.out.println("Conta: "+numero
+                +", Titular: "+nome
+                +", Saldo: "+saldo+"\n");
     }
 }
