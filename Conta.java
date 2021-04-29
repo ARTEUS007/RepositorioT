@@ -1,48 +1,44 @@
-package sample.model;
+package herança;
 
 public class Conta {
-    private int numero;
+    //atributos
     private String nome;
+    private int numero;
     private double saldo;
 
-    public Conta(int numero, String nome){
-        this.numero = numero;
-        this.nome = nome;
-        saldo = 0.0;
+    //métodos
+    public void deposito(double valor){
+        setSaldo(getSaldo() + valor);
+        //saldo += valor;
     }
-    public Conta(int numero, String nome, double saldo){
-        this.numero = numero;
+    public void saque(double valor){
+        setSaldo(getSaldo() - valor);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
         this.nome = nome;
-        this.saldo = saldo;
     }
 
     public int getNumero() {
         return numero;
     }
-    public String getNome() {
-        return nome;
+
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+
     public double getSaldo() {
         return saldo;
     }
 
-    //déposito
-    public void deposito(double valor){
-        this.saldo += valor;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
-    //saque
-    public void saque(double valor){
-        this.saldo = this.saldo -5.0 - valor;
-        //this.saldo -= valor (-5);
-    }
 
-    public void imprimir(){
-        System.out.println("Conta: "+numero
-                +", Titular: "+nome
-                +", Saldo: "+saldo+"\n");
-    }
+
 }
